@@ -15,22 +15,12 @@ public class Background extends RenderedObject {
 	
 	private static final int NUMFRAMES = 32;
 	
-	//public Image image;
-	
 	private double x;
 	private double y;
 	private double moveByX;
 	private double moveByY;
 	
 	public Background() {
-		
-		/*try {
-			image = new Image("/images/Backgrounds/bg.gif/", 960, 540, false, true);
-		}
-		
-		catch(Exception e) {
-			e.printStackTrace();
-		}*/
 		
 		Image[] bgArray = new Image[NUMFRAMES];
 		for(int i = 0; i < NUMFRAMES; i++) {

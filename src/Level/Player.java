@@ -67,11 +67,6 @@ public class Player extends RenderedObject { //Just a test sprite
 		animation.setDelay(60);
 	}
 	
-	/*public void setMovementAmount(double x, double y) {
-		moveByX = x;
-		moveByY = y;
-	}*/
-	
 	public void update() {
 		
 		if (left || right) {
@@ -80,7 +75,6 @@ public class Player extends RenderedObject { //Just a test sprite
 				animation.importFrames(sprites.get(WALKING));
 				animation.setDelay(60);
 			}
-			//System.out.println("SHOULD BE WALKING");
 		}
 		
 		else if (punching) {
@@ -89,14 +83,12 @@ public class Player extends RenderedObject { //Just a test sprite
 				animation.importFrames(sprites.get(PUNCHING));
 				animation.setDelay(60);
 			}
-			//System.out.println("SHOULD BE PUNCHING");
 		}
 		
 		else if (currentAction != IDLE) {
 			currentAction = IDLE;
 			animation.importFrames(sprites.get(IDLE));
 			animation.setDelay(60);
-			//System.out.println("SHOULD BE IDLE");
 		}
 		
 		animation.update();
@@ -127,12 +119,10 @@ public class Player extends RenderedObject { //Just a test sprite
 	public void setPunch(Boolean b) {
 		if (b) {
 			punching = true;
-			//currentAction = PUNCHING;
 		}
 		
 		else {
 			punching = false;
-			//currentAction = IDLE;
 		}
 	}
 
