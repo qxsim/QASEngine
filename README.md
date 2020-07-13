@@ -6,12 +6,12 @@ I made a simple test level called 'FightNight!' which is a simple multiplayer 2-
 
 ## Controls
 
-Player 1: 
-Move left: A
-Move right: D
+Player 1: <br /> 
+Move left: A <br />
+Move right: D <br />
 Attack: Q
 
-Player 2:
-Move left: Left Arrow
-Move right: Right Arrow
+Player 2: <br />
+Move left: Left Arrow <br />
+Move right: Right Arrow <br />
 Attack: P
