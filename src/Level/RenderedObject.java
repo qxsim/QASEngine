@@ -9,9 +9,9 @@ import javafx.scene.canvas.GraphicsContext;
  * @version 25/02/2019
  */
 public abstract class RenderedObject {
-	
-	protected Animation animation;
+    
+    protected Animation animation;
 
-	public abstract void update();	
-	public abstract void render(GraphicsContext g);
+    public abstract void update();  
+    public abstract void render(GraphicsContext g);
 }
